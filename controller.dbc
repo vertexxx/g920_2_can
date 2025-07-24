@@ -1,0 +1,61 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: PC
+
+
+BO_ 256 STICKS: 8 PC
+ SG_ LEFT_X : 0|8@1+ (1,0) [0|255] ""  PC
+ SG_ LEFT_Y : 8|8@1+ (1,0) [0|255] ""  PC
+ SG_ RIGHT_X : 16|8@1+ (1,0) [0|255] ""  PC
+ SG_ RIGHT_Y : 24|8@1+ (1,0) [0|255] ""  PC
+
+BO_ 257 TRIG_BTN: 8 PC
+ SG_ LEFT_TRIGGER : 0|8@1+ (1,0) [0|255] ""  PC
+ SG_ RIGHT_TRIGGER : 8|8@1+ (1,0) [0|255] ""  PC
+ SG_ A : 16|8@1+ (1,0) [0|1] ""  PC
+ SG_ B : 24|8@1+ (1,0) [0|1] ""  PC
+ SG_ X : 32|8@1+ (1,0) [0|1] ""  PC
+ SG_ Y : 40|8@1+ (1,0) [0|1] ""  PC
+
+BO_ 258 CURVE: 8 PC
+ SG_ CURVE_RADIUS : 0|32@1- (1,0) [0|10000] "m"  PC
+ SG_ CURVATURE : 32|32@1- (1,0) [0|1] "1/m"  PC
+
+
+
+SIG_VALTYPE_ 258 CURVE_RADIUS : 1;
+SIG_VALTYPE_ 258 CURVATURE : 1;
+
